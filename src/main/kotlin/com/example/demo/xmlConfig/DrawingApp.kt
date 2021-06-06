@@ -15,4 +15,5 @@ fun main() {
     c.draw()
     println(context.getMessage("greeting", null, "Default Greeting", Locale("us")))
     val environment: Environment = context.getEnvironment()
+    print(environment.getProperty("APP_NAME"))
 }
